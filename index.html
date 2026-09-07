@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -62,10 +63,6 @@
             cursor: pointer;
         }
 
-        button:hover {
-            transform: scale(1.05);
-        }
-
         section {
             padding: 50px 20px;
             text-align: center;
@@ -92,11 +89,6 @@
             box-shadow: 0 5px 15px #ccc;
             font-size: 20px;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .skill-card:hover {
-            transform: scale(1.08);
         }
 
         input, textarea {
@@ -118,13 +110,77 @@
             color: white;
             text-align: center;
             padding: 25px;
-            margin-top: 30px;
         }
+    </style>
+</head>
 
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 30px;
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>Assalam-o-Alaikum! 👋</h1>
+        <p>Welcome to my website.</p>
+        <p>My name is Khan. I am learning web development.</p>
+
+        <img src="https://picsum.photos/300" alt="My Image">
+
+        <br>
+
+        <button onclick="location.href='#about'">
+            Learn More
+        </button>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Khan. I am learning web development.</p>
+
+        <h3>My Skills</h3>
+
+        <div class="skills">
+            <div class="skill-card">💻 HTML</div>
+            <div class="skill-card">🎨 CSS</div>
+            <div class="skill-card">⚡ JavaScript</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <input type="text" id="name" placeholder="Your Name">
+        <br>
+
+        <input type="email" id="email" placeholder="Your Email">
+        <br>
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <br>
+
+        <button onclick="sendMessage()">Send Message</button>
+    </section>
+
+    <footer>
+        © 2026 Khan | All Rights Reserved
+    </footer>
+
+    <script>
+        function sendMessage() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            if (name == "" || email == "" || message == "") {
+                alert("Please fill all fields!");
+            } else {
+                alert("Message sent successfully!");
             }
+        }
+    </script>
 
-            nav a {
-                margin: 
+</body>
+</html>
