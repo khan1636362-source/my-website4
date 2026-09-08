@@ -1,78 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Khan Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khan Website</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7ff;
-            color: #222;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7ff;
+      color: #222;
+    }
 
-        nav {
-            background: #111b4d;
-            padding: 18px;
-            text-align: center;
-        }
+    nav {
+      background: #111b4d;
+      padding: 18px;
+      text-align: center;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-        }
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+    }
 
-        .hero h1 {
-            font-size: 42px;
-        }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
 
-        .hero p {
-            font-size: 20px;
-        }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
 
-        .hero img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            margin: 20px;
-            border: 5px solid white;
-        }
+    button {
+      background: orange;
+      color: white;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 8px;
+      font-size: 17px;
+      cursor: pointer;
+    }
 
-        button {
-            background: orange;
-            color: white;
-            border: none;
-            padding: 14px 25px;
-            border-radius: 8px;
-            font-size: 17px;
-            cursor: pointer;
-        }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
+    section h2 {
+      color: #1e3c72;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
 
-        section h2 {
-            color: #1e3c72;
-            font-size: 32px;
-        }
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
-        .skills {
-            display: flex;
-            justify-content: center;
-           
+    .card {
+      background: white;
+      padding: 25px;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #1e3c72;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #111b4d;
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    footer {
+      background: #080d2b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <h1>Welcome to Khan Website</h1>
+    <p>My first professional website 🚀</p>
+    <button onclick="alert('Welcome to my website!')">
+      Click Me
+    </button>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Welcome to my website. I am learning web development
+      and building my online business skills.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills">
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>HTML and CSS website development.</p>
+      </div>
+
+      <div class="card">
+        <h3>Amazon</h3>
+        <p>Learning Amazon business and online selling.</p>
+      </div>
+
+      <div class="card">
+        <h3>Business</h3>
+        <p>Learning online business skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: khan@example.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Khan Website. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
